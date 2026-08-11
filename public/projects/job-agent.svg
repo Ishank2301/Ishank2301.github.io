@@ -1,0 +1,5 @@
+<svg width="960" height="600" viewBox="0 0 960 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="930" y2="610" gradientUnits="userSpaceOnUse"><stop stop-color="#273415"/><stop offset=".52" stop-color="#172316"/><stop offset="1" stop-color="#0F1510"/></linearGradient><filter id="b"><feGaussianBlur stdDeviation="18"/></filter></defs>
+  <rect width="960" height="600" fill="url(#a)"/><circle cx="702" cy="260" r="153" fill="#C9F66B" opacity=".22" filter="url(#b)"/><rect x="223" y="136" width="395" height="331" rx="13" stroke="#A0C75A" stroke-width="2"/><path d="M256 205H510M256 270H561M256 335H467M256 400H542" stroke="#C8F579" stroke-width="8" stroke-linecap="round"/><circle cx="561" cy="205" r="14" fill="#C9F66B"/><circle cx="610" cy="335" r="47" fill="#D9FF8C" opacity=".18"/><path d="M611 311V360M586 335H636" stroke="#D9FF8C" stroke-width="4" stroke-linecap="round"/>
+  <text x="61" y="92" fill="#E8FFC1" font-family="monospace" font-size="20" letter-spacing="5">JOB AGENT / 03</text><text x="61" y="516" fill="#A6C876" font-family="Georgia" font-size="75" font-style="italic">signal through the noise</text>
+</svg>

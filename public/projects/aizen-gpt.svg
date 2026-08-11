@@ -1,0 +1,6 @@
+<svg width="960" height="600" viewBox="0 0 960 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="a" x1="50" y1="20" x2="900" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#342477"/><stop offset=".54" stop-color="#14142D"/><stop offset="1" stop-color="#0C101B"/></linearGradient><filter id="b"><feGaussianBlur stdDeviation="14"/></filter></defs>
+  <rect width="960" height="600" fill="url(#a)"/><g opacity=".28" stroke="#BBB2FF"><path d="M0 80H960M0 200H960M0 320H960M0 440H960M120 0V600M280 0V600M440 0V600M600 0V600M760 0V600M920 0V600"/></g>
+  <circle cx="657" cy="233" r="146" fill="#8B77FF" opacity=".42" filter="url(#b)"/><g stroke="#C4B9FF" stroke-width="2" opacity=".85"><path d="M218 358L385 203L560 292L730 158"/><path d="M385 203L496 414L730 158"/><circle cx="218" cy="358" r="12" fill="#1F1B4C"/><circle cx="385" cy="203" r="13" fill="#B8A9FF"/><circle cx="560" cy="292" r="12" fill="#1F1B4C"/><circle cx="730" cy="158" r="13" fill="#B8A9FF"/><circle cx="496" cy="414" r="10" fill="#1F1B4C"/></g>
+  <text x="62" y="93" fill="#EEEAFF" font-family="monospace" font-size="20" letter-spacing="5">AIZEN-GPT / 01</text><text x="61" y="510" fill="#9B91CF" font-family="Georgia" font-size="75" font-style="italic">attention, from first principles</text>
+</svg>
