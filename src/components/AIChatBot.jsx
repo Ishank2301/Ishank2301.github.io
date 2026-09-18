@@ -10,8 +10,19 @@ export default function AIChatBot() {
   const [loading, setLoading] = useState(false)
 
   async function handleSend() {
-    if (!input.trim()) return
-    const newMessages = [...messages, { role: 'user', content: input }]
+    // 🛡️ Sentinel: Rate limiting / prevent concurrent requests
+    if (loading) return
+
+    const trimmedInput = input.trim()
+    if (!trimmedInput) return
+
+    // 🛡️ Sentinel: Input length limit to prevent abuse/DoS
+    if (trimmedInput.length > 500) {
+      setMessages([...messages, { role: 'assistant', content: "Message too long. Please keep it under 500 characters." }])
+      return
+    }
+
+    const newMessages = [...messages, { role: 'user', content: trimmedInput }]
     setMessages(newMessages)
     setInput('')
     setLoading(true)
@@ -69,8 +80,8 @@ export default function AIChatBot() {
             {loading && <div className="text-slate-400 text-xs animate-pulse">AI is thinking...</div>}
           </div>
           <div className="flex gap-2">
-            <input value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleSend()} className="flex-1 bg-slate-900/50 border border-slate-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-accent" placeholder="Ask about my ML projects..." />
-            <button className="px-4 py-2 bg-accent rounded-lg text-slate-900 font-bold" onClick={handleSend}>Send</button>
+            <input disabled={loading} value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleSend()} className="flex-1 bg-slate-900/50 border border-slate-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-accent disabled:opacity-50" placeholder="Ask about my ML projects..." />
+            <button disabled={loading} className="px-4 py-2 bg-accent rounded-lg text-slate-900 font-bold disabled:opacity-50 disabled:cursor-not-allowed" onClick={handleSend}>Send</button>
           </div>
         </div>
       )}
